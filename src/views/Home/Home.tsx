@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={logo} height={120} />}
         title="Merge Farming"
-        subtitle="Stake MERGE/BNB LP tokens and claim your MERGE from the Bridge Pool"
+        subtitle="Stake sCeik/BNB LP tokens and claim your sCeik from the Bridge Pool"
       />
 
       <Container>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: MERGE-BNB LP token pool yields more token per block.
+        🏆<b>Pro Tip</b>: sCeik-BNB LP token pool yields more token per block.
       </StyledInfo>
       <Spacer size="lg" />
       <div

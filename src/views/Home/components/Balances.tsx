@@ -94,7 +94,7 @@ const Balances: React.FC = () => {
               <SushiIcon />
               <Spacer />
               <div style={{ flex: 1 }}>
-                <Label text="Your MERGE Balance" />
+                <Label text="Your sCeik Balance" />
                 <Value
                   value={!!account ? getBalanceNumber(sushiBalance) : 'Locked'}
                 />
@@ -105,7 +105,7 @@ const Balances: React.FC = () => {
         <Footnote>
           Pending harvest
           <FootnoteValue>
-            <PendingRewards /> MERGE
+            <PendingRewards /> sCeik
           </FootnoteValue>
         </Footnote>
       </Card>
@@ -113,14 +113,14 @@ const Balances: React.FC = () => {
 
       <Card>
         <CardContent>
-          <Label text="Total MERGE Supply" />
+          <Label text="Total sCeik Supply" />
           <Value
             value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
           />
         </CardContent>
         <Footnote>
           New rewards per block
-          <FootnoteValue>0.022 MERGE</FootnoteValue>
+          <FootnoteValue>0.022 sCeik</FootnoteValue>
         </Footnote>
       </Card>
     </StyledWrapper>

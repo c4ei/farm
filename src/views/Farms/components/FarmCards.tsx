@@ -30,7 +30,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'MERGE',
+    ({ tokenSymbol }) => tokenSymbol === 'sCeik',
   )
 
   //console.log(stakedValue);

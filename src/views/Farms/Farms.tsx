@@ -27,7 +27,7 @@ const Farms: React.FC = () => {
             <Route exact path={path}>
               <PageHeader
                 icon={<img src={logo} height="120" />}
-                subtitle="Earn MERGE tokens by staking Merge/BNB LP Tokens. MERGE rewards from the Bridge Pool are used fuel farming on BSC"
+                subtitle="Earn sCeik tokens by staking Merge/BNB LP Tokens. sCeik rewards from the Bridge Pool are used fuel farming on BSC"
                 title="It's Merge Farming Time!"
               />
               <FarmCards />

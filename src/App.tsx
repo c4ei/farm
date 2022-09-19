@@ -49,9 +49,13 @@ const Providers: React.FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <UseWalletProvider
-        chainId={56}
+        // chainId={56}
+        // connectors={{
+        //   walletconnect: { rpcUrl: 'https://bsc-dataseed.binance.org/' },
+        // }}
+        chainId={21004}
         connectors={{
-          walletconnect: { rpcUrl: 'https://bsc-dataseed.binance.org/' },
+          walletconnect: { rpcUrl: 'https://rpc.c4ei.net/' },
         }}
       >
         <SushiProvider>

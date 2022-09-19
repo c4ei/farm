@@ -25,17 +25,17 @@ export const INTEGERS = {
 export const addressMap = {
   uniswapFactory: '0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95',
   uniswapFactoryV2: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
-  YFI: '0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e',
-  YCRV: '0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8',
-  UNIAmpl: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
   WETH: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   UNIRouter: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
-  LINK: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
-  MKR: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
-  SNX: '0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F',
-  COMP: '0xc00e94Cb662C3520282E6f5717214004A7f26888',
-  LEND: '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
-  SUSHIYCRV: '0x2C7a51A357d5739C5C74Bf3C96816849d2c9F726',
+  // YFI: '0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e',
+  // YCRV: '0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8',
+  // UNIAmpl: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
+  // LINK: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
+  // MKR: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+  // SNX: '0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F',
+  // COMP: '0xc00e94Cb662C3520282E6f5717214004A7f26888',
+  // LEND: '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
+  // SUSHIYCRV: '0x2C7a51A357d5739C5C74Bf3C96816849d2c9F726',
 }
 
 // export const contractAddresses = {
@@ -457,21 +457,19 @@ SLP Address on mainnet for reference
 
 
 // Project Merge SETTINGS
-
-export const CHAIN_ID = 56
+// topic : 0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0
+export const CHAIN_ID = 21004
 
 export const contractAddresses = {
-  sushi: {
-    56: '0x2D5c9167fDd5c068c8fcB8992e6Af639b42FBf70',
-  },
-  masterChef: {
-    56: '0xBfd853A44Ed9c0522531b3Af8bAe52635FDAA131',
-  },
-  weth: {
-    56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
-  },
-  xSushi: {
-    56: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
+  // sushi: { 56: '0x2D5c9167fDd5c068c8fcB8992e6Af639b42FBf70', },
+  // masterChef: { 56: '0xBfd853A44Ed9c0522531b3Af8bAe52635FDAA131', },
+  // weth: { 56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', },
+  // xSushi: { 56: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
+  // }
+  sushi: { 21004: '0x841f36af6F4d92013aC0B5EF640397A52D2EdaFa', }, // 3_ERC1967Proxy.sol
+  masterChef: { 21004: '0x314DaFc8309eb1d3E27608f346E4c7f5bA0e5256', },
+  weth: { 21004: '0x314DaFc8309eb1d3E27608f346E4c7f5bA0e5256', },
+  xSushi: { 21004: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
   }
 }
 
@@ -481,14 +479,16 @@ export const supportedPools = [
   {
     pid: 0,
     lpAddresses: {
-      56: '0xc669f6f4305dc0959cd136ec2a4e0f68797f3b1a', // LP Token Address
+      // 56: '0xc669f6f4305dc0959cd136ec2a4e0f68797f3b1a', // LP Token Address
+      21004: '0xc669f6f4305dc0959cd136ec2a4e0f68797f3b1a', // LP Token Address
     },
     tokenAddresses: {
-      56: '0x2D5c9167fDd5c068c8fcB8992e6Af639b42FBf70', // Token, i.e. "BUSD"
+      // 56: '0x2D5c9167fDd5c068c8fcB8992e6Af639b42FBf70', // Token, i.e. "BUSD"
+      21004: '', // Token, i.e. "BUSD"  // ??3_ERC1967Proxy.sol
     },
     name: 'Merge Farming',
-    symbol: 'MERGE-BNB LP',
-    tokenSymbol: 'MERGE',
+    symbol: 'sCeik-BNB LP',
+    tokenSymbol: 'sCeik',
     icon: '🦍',
   },
 ]
